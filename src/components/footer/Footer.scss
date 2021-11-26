@@ -1,0 +1,41 @@
+@import "../../assets/colors/colors";
+
+.footer {
+    &-container {
+        width: 100%;
+        padding: 50px 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: $footerColor;
+        color: $backgorundColor;
+
+        &-corp {
+            margin-right: 20px;
+
+            &-is {
+                margin-bottom: 15px;
+            }
+            &-about {
+                background-color: transparent;
+            }
+        }
+
+        &-location {
+            margin-right: 20px;
+
+            &-title {
+                margin-bottom: 20px;
+            }
+            &-map {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &-bottom {
+        height: 30px;
+        background-color: $bordercolor;
+        text-align: center;
+        align-items: center;
+    }
+}

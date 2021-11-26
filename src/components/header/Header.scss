@@ -1,0 +1,109 @@
+@import '../../assets/colors/colors';
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+
+    &-top {
+
+        width: 100%;
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+
+
+        &-container {
+            width: 100%;
+            height: 100%;
+            max-width: 1280px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            font-size: 12px;
+            color: $primaryText;
+
+            &-whatsapp {
+                margin-right: 34px;
+                cursor: pointer;
+            }
+
+            &-location {
+                margin-right: 58px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-middle {
+        width: 100%;
+        max-width: 1280px;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        align-items: center;
+        justify-items: center;
+        padding: 0 48px;
+        
+
+
+
+        &-logo {
+            width: 125px;
+            justify-self: start;
+
+
+        }
+
+        &-search {
+            width: 500px;
+            height: 48px;
+            box-shadow: 0 0 2px 0;
+
+        }
+
+        &-profile {
+            width: 200px;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    &-bottom {
+
+        width: 100%;
+        height: 41px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $primaryColor;
+        font-size: 12px;
+        color: $primaryText;
+
+       
+           }
+
+    &-floating {
+        position: fixed;
+        background-color: $backgorundColor;
+        top: -50px;
+        left: 0;
+        transition: all 0.3s ease;
+
+        &-show {
+            top: 0;
+            transition: all 0.3s ease;
+        }
+    }
+
+
+
+}
